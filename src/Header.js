@@ -11,10 +11,18 @@ import "./Header.css";
 function Header() {
   return (
     <>
-      <h1>Timothy's youtube-clone! </h1>
+      <h1
+        style={{
+          backgroundColor: "grey",
+          textAlign: "center",
+          color: "darkgrey",
+        }}
+      >
+        Timothy's youtube-clone!{" "}
+      </h1>
       <div className="header">
         <div className="header__left">
-          <MenuIcon />
+          <MenuIcon style={{ cursor: "pointer" }} />
           <img
             className="header__logo"
             src="https://www.freeiconspng.com/uploads/youtube-logo-png-transparent-image-5.png"
@@ -23,13 +31,12 @@ function Header() {
         </div>
 
         <div className="header__input">
-          <div className="header__inputText">
-            <input placeholder="Search" type="text" />
-            <SearchIcon className="header__inputButton" />
-          </div>
-          <div className="header__inputVoice">
-            <MicIcon />
-          </div>
+          <input
+            placeholder="Search"
+            style={{ fontSize: "15px" }}
+            type="text"
+          />
+          <SearchIcon className="header__inputButton" />
         </div>
 
         <div className="header__right">
