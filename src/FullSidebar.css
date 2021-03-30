@@ -1,0 +1,16 @@
+.fullSidebar {
+  flex: 1;
+  position: fixed;
+  z-index: 105;
+  background-color: white;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.fullSidebar > hr {
+  height: 1px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+}

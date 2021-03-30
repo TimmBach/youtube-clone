@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 0px 20px;
   padding-left: 25px;
   justify-content: space-between;
   position: sticky;
@@ -47,4 +47,16 @@
 
 .header__icon {
   margin-right: 20px;
+}
+
+@media only screen and (min-width: 650px) {
+  .header__icon.header__searchIcon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header__input {
+    display: none;
+  }
 }

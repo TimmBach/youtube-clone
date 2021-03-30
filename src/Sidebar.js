@@ -10,7 +10,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <SidebarRow selected Icon={HomeIcon} title="Home" />
-      <SidebarRow Icon={ExploreIcon} title="Trending" />
+      <SidebarRow Icon={ExploreIcon} title="Explore" />
       <SidebarRow Icon={SubscriptionsIcon} title="Subscription" />
       <SidebarRow Icon={VideoLibraryIcon} title="Library" />
     </div>
