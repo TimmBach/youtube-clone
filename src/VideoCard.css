@@ -1,5 +1,5 @@
 .videoCard {
-  width: 280px;
+  width: 270px;
   padding-bottom: 40px;
   margin-right: 7px;
   background-color: rgb(240, 245, 240);
@@ -12,6 +12,7 @@
   width: 250px;
   object-fit: contain;
   border-radius: 2px;
+  background-color: black;
 }
 
 .videoCard__info {
@@ -24,4 +25,9 @@
 
 .videoCard__text > h4 {
   margin-bottom: 5px;
+}
+
+.videoCard__text > p {
+  font-weight: 400;
+  color: rgb(102, 102, 102);
 }
