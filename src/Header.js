@@ -17,7 +17,7 @@ function Header({ onClick }) {
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon style={{ cursor: "pointer" }} onClick={onClick} />
+        <MenuIcon className="header__menuIcon " onClick={onClick} />
         <Link to="/">
           <img
             className="header__logo"
@@ -41,12 +41,12 @@ function Header({ onClick }) {
       </div>
 
       <div className="header__right">
-        <SearchIcon className="header__icon header__searchIcon" />
+        <SearchIcon className="header__searchIcon" />
         <VideoCallIcon className="header__icon" />
         <AppsIcon className="header__icon" />
         <NotificationsIcon className="header__icon" />
         <Avatar
-          className="header__icon"
+          className="header__avatar"
           alt="Tim"
           src="https://e7.pngegg.com/pngimages/194/608/png-clipart-cristiano-ronaldo-holding-soccer-ball-cristiano-ronaldo-fifa-18-fifa-17-fifa-16-real-madrid-c-f-fifa-tshirt-blue-thumbnail.png"
         />

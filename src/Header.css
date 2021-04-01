@@ -1,19 +1,27 @@
 .header {
   display: flex;
   align-items: center;
-  padding: 0px 20px;
-  padding-left: 25px;
+  /* padding: 0px 20px; */
+  padding-left: 15px;
   justify-content: space-between;
   position: sticky;
   top: 0;
+  left: 0;
+  /* flex: 1; */
+  width: 100% !important;
   z-index: 100;
   background-color: white;
+  border-bottom: 1px solid grey;
+}
+
+.header__menuIcon {
+  cursor: pointer;
 }
 
 .header__logo {
   margin-left: 10px;
-  margin-right: 10px;
-  height: 60px;
+  /* margin-right: 10px; */
+  height: 10vh;
   object-fit: contain;
 }
 
@@ -46,18 +54,41 @@
   padding: 3px;
 }
 
-.header__icon {
+.header__icon,
+.header__avatar,
+.header__searchIcon {
   margin-right: 20px;
 }
 
-@media only screen and (min-width: 650px) {
-  .header__icon.header__searchIcon {
+@media only screen and (min-width: 430px) {
+  .header__searchIcon {
     display: none;
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .header__input {
-    display: none;
+@media only screen and (max-width: 770px) {
+  .header__input,
+  .header__icon,
+  .header__menuIcon {
+    display: none !important;
+  }
+
+  .header__searchIcon {
+    font-size: 40px !important;
+  }
+
+  .header__avatar {
+    margin-right: 5px !important;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    width: 100vw !important;
+    min-width: 340px;
+    margin-right: 20px !important;
+    margin-top: 0px;
   }
 }
