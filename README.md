@@ -1,3 +1,5 @@
+App is hosted at:  https://clone-7efbd.web.app/
+
 # Youtube clone
 
 A responsive and well-designed youtube clone with minimal functionalities.
